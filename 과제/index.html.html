@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soccer Blog</title>
+    <style>
+        .fixed-text {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        #div1 {
+            position:absolute;
+            top:49%;
+            left: 30%;
+            background-color:rgb(94, 207, 94);
+            width: 200px;
+            height: 200px;
+        }
+
+        #div2 {
+            position:absolute;
+            top: 137%;
+            left: 30%;
+            background-color:rgb(94, 207, 94);
+            width: 200px;
+            height: 200px;
+        }
+
+        #div3 {
+            position:absolute;
+            top:241%;
+            left: 30%;
+            background-color:rgb(94, 207, 94);
+            width: 210px;
+            height: 200px;
+        }
+
+        .space {
+            height: 50px;
+        }
+
+        body {
+            background-color: rgb(215, 236, 194);
+        }
+    </style>
+
+    <script>
+        function greeting (name, position) {
+            alert(name+"는 현"+position+"에서 물러나야 한다고 언론/대중은 입모아 외치고 있다")
+        }
+    </script>
+</head>
+
+<body>
+    <div class="fixed-text">202400619 신연진</div>
+
+    <header>
+        <h1>Soccer Blog</h1>
+    </header>
+
+    <nav>
+        <h2>순서</h2>
+        <ul>
+            <li><a href="#PSG">PSG</a></li>
+            <li><a href="#대한민국 국가대표">대한민국 국가대표</a></li>
+            <li><a href="#Review">Review</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <article id="PSG">
+            <h2>PSG</h2>
+            <ol type="1">
+                <li>감독</li>
+                : Luis Enrique(루이스 엔리케)
+                <li>24-25 시즌 Best 멤버</li><br>
+                <img src="LEE.jpg" width="200" height="250" alt="Lee Kang In"><br>
+                (출처: PSG instagram) <br><br>
+                <li>최근 3년간 경기 성적</li>
+                <ul>
+                    <li>리그1</li>
+                    2021-22, 2022-23, 2023-24
+                    <li>쿠프 드 프랑스</li>
+                    2023-24
+                    <li>트로페 데 샹피옹</li>
+                    2023
+                </ul>
+            </ol>
+        </article>
+
+        <article id="대한민국 국가대표">
+            <h2>대한민국 국가대표</h2>
+            <ol type="1">
+                <li>감독</li>
+                : 홍명보 감독
+                <li>현재 FIFA 랭킹</li>
+                : 22위
+                <li> 11월 A매치 멤버</li><br>
+                <img src="KFA.jpg" width="400" height="500" alt="대한민국 국가대표 명단"><br>
+                (출처: KFA instagram) <br><br>
+                <li>최근 3년간 경기 성적</li>
+                    <ul>
+                        <li>2022 카타르 월드컵 16위
+                        <li>2023 카타르 아시안컵 4위
+                    </ul> 
+            </ol>
+            <button onclick="greeting('정O규','자리')">현재 사건/사고</button>
+        </article>
+
+        <article id="Review">
+            <h2>Review</h2>
+            <ol type="1"></ol>
+            <li>인생 첫 유니폼 구매한 날</li><br>
+            <img src="uniform.jpg" width="400" height="500" alt="유니폼사진"><br><br>
+            <li>24.07.31 토트넘 vs 팀K리그 친선경기 직관</li><br>
+            <img src="토트넘팀k리그.jpg" width="400" height="500" alt="필드 사진"><br><br>
+            <li>24.09.05 북중미 월드컵 3차 예선 첫 경기 직관 </li><br>
+            <img src="cornerkick.jpg" width="400" height="500" alt="손흥민 코너킥"><br><br>
+        </article>
+    </section>
+
+    <section>
+    <div id="div1">
+        <h3>PSG를 좋아하는 이유</h3>
+        <hr>
+        <ol>
+            <li>이강인</li><br>
+            <li>리그1의 압도적 1위팀</li>
+        </ol>
+    </div>
+
+    <div id="div2">
+        <h3>국가대표팀을 응원하는 이유</h3>
+        <hr>
+        <ol>
+            <li>뛰어난 선수들</li><br>
+            <li>대한민국 국민이기에</li>
+        </ol>
+    </div>
+
+    <div id="div3">
+        <h3>축구를 좋아하게 된 계기</h3>
+        : 고3일 때 주변에 축구를 좋아하는 친구들이 있었다.
+        그땐 국가대표 경기만 챙겨봤었는데 점점 빠지다 보니
+        해외축구까지 챙겨보게 되었다.
+    </div>
+    </section>
+
+    <div class="space"></div>
+
+    <hr>
+
+    <footer>
+        더 알고 싶은 점
+        <form name="sform" action="https://search.naver.com/search.naver" method="get" target="_blank">
+            <input name="query" type="text">
+            <button type="submit">검색</button>
+        </form>
+    </footer>
+    
+</body>
+</html>
